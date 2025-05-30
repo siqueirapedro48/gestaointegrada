@@ -1,0 +1,115 @@
+/* Fundo branco, fonte padrão com azul clarinho */
+body {
+  background-color: #ffffff; /* fundo branco */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a3e72; /* azul gestão mais escuro para textos */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container centralizado e com largura máxima */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Títulos com azul mais forte */
+h1, h2, h3 {
+  color: #1a3e72; /* azul gestão */
+  margin-bottom: 15px;
+}
+
+/* Botões com sombra suave, borda arredondada e cursor pointer */
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(26, 62, 114, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botão confirmação verde */
+button.confirm {
+  background-color: #28a745; /* verde confirmação */
+  color: white;
+}
+
+button.confirm:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Botão negação vermelho */
+button.cancel {
+  background-color: #dc3545; /* vermelho negação */
+  color: white;
+}
+
+button.cancel:hover {
+  background-color: #c82333;
+  box-shadow: 0 6px 12px rgba(220, 53, 69, 0.4);
+}
+
+/* Links com azul gestão */
+a {
+  color: #1a3e72;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inputs e textareas com borda azul clara, arredondados e sombra suave */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 2px solid #a9c4e0; /* azul claro */
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #1a3e72; /* azul gestão */
+  outline: none;
+  box-shadow: 0 0 8px #1a3e72aa;
+}
+
+/* Sombra e espaçamento para caixas */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(26, 62, 114, 0.1);
+}
+
+/* Texto de ajuda ou informação menor */
+.small-text {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
