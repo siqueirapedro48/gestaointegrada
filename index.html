@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Integrada</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="firebaseConfig.js"></script>
+    <script defer src="auth.js"></script>
+</head>
+<body>
+    <div id="main-content">
+        <h1>Sistema de Gestão Integrada</h1>
+        <div id="login-container">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+        </div>
+        <div id="register-container" style="display:none;">
+            <h2>Criar Superusuário (Primeiro acesso)</h2>
+            <input type="email" id="regEmail" placeholder="Email">
+            <input type="password" id="regPassword" placeholder="Senha">
+            <button onclick="registerSuperAdmin()">Cadastrar</button>
+        </div>
+    </div>
+</body>
+</html>

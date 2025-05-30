@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel do Superadministrador</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="firebaseConfig.js"></script>
+    <script defer src="superadmin.js"></script>
+</head>
+<body>
+    <h1>Bem-vindo, Superadministrador</h1>
+    <button onclick="logout()">Sair</button>
+    <h2>Cadastrar Município</h2>
+    <input type="text" id="municipioNome" placeholder="Nome do Município">
+    <input type="text" id="estado" placeholder="Estado (UF)">
+    <button onclick="cadastrarMunicipio()">Cadastrar Município</button>
+</body>
+</html>
